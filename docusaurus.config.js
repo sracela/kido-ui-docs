@@ -1,20 +1,24 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Kido UI | Docs',
+  tagline: 'UI Docs',
+  url: 'https://kido-ui-docs.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'kido-dynamics', // Usually your GitHub org/user name.
+  projectName: 'kido-ui-docs', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+  },
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Kido UI | Docs Logo',
+        src: 'img/KIDO_horizontal_black.png',
       },
       items: [
         {
@@ -28,6 +32,10 @@ module.exports = {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          position: 'right',
+          type: 'localeDropdown',
         },
       ],
     },
